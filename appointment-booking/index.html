@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking - Mr. X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@latest/main.min.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.jpg">
+                
+            </div>
+        </header>
+
+        <main>
+            <section class="event-details">
+                <h2>Mr. X</h2>
+                <p><span class="icon">⏰</span> 20 min</p>
+                <p><span class="icon">📞</span> Phone call</p>
+                <p><span class="icon">📅</span> <span id="selected-date-time"></span></p>
+                <p><span class="icon">🌍</span> <span id="selected-timezone">Central Time - US & Canada</span></p>
+            </section>
+
+            <section class="booking-section">
+                <div id="calendar"></div>
+                <div class="time-slots" id="time-slots"></div>
+                <form id="booking-form" class="booking-form" style="display: none;">
+                    <input type="text" id="name" placeholder="Name *" required>
+                    <input type="email" id="email" placeholder="Email *" required>
+                    <input type="tel" id="phone" placeholder="Phone Number *" required>
+                    <textarea id="message" placeholder="Anything to help prepare for our meeting"></textarea>
+                    <button type="submit">Schedule Event</button>
+                </form>
+                <form id="delete-form" class="delete-form">
+                    <h3>Cancel Booking</h3>
+                    <input type="text" id="delete-date" placeholder="Date (YYYY-MM-DD) *" required>
+                    <input type="text" id="delete-time" placeholder="Time (e.g., 8:30am) *" required>
+                    <button type="submit">Cancel Booking</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <a href="#">Cookie settings</a>
+            <a href="#">Report abuse</a>
+        </footer>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@latest/main.min.js'></script>
+    <script src='https://momentjs.com/downloads/moment.min.js'></script>
+    <script src='https://momentjs.com/downloads/moment-timezone-with-data.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
