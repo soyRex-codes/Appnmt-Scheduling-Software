@@ -1,7 +1,7 @@
 Below is a comprehensive README.md file that documents your appointment booking system project. It includes setup instructions, usage details, file structure, dependencies, and troubleshooting tips. This will help you or anyone else run the project later.
 
-Appointment Booking System - Sam The Concrete Man
-This project is a web-based appointment booking system for "Sam The Concrete Man," allowing users to schedule discovery calls with Alec Oster. The system uses a calendar interface to select dates and times, stores bookings in MongoDB for persistence, sends email confirmations, and provides a feature to cancel bookings.
+Appointment Booking System - Rajkumar
+This project is a web-based appointment booking system for Rajkumar," allowing users to schedule discovery calls with Rajkumar. The system uses a calendar interface to select dates and times, stores bookings in MongoDB for persistence, sends email confirmations, and provides a feature to cancel bookings.
 
 Features
 Calendar Interface: Select a date using FullCalendar to view available time slots.
